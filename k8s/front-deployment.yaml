@@ -1,0 +1,22 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: mern-front
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mern-front
+  template:
+    metadata:
+      labels:
+        app: mern-front
+    spec:
+      containers:
+        - name: mern-front
+          image: gcr.io/ml-api-demos-288521/mern-front:0.0.1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+      restartPolicy: Always
+
