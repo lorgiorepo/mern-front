@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components > ArtistList renders artist list 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      All Artist
+    </h1>
+    <ul />
+  </div>
+</DocumentFragment>
+`;

@@ -15,6 +15,9 @@ describe('components > App', () => {
       hasError: false,
       isFulfilled: false,
     },
+    artistsData: {
+      artists: []
+    }
   });
 
   it('renders without crashing', () => {

@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`features > random > ArtistReducer updates state according to dispatched GET_ARTISTS 1`] = `
+Object {
+  "artists": Array [],
+  "value": undefined,
+}
+`;

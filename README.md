@@ -344,3 +344,24 @@ You can use source folder relative paths for imports. `import Component from './
     ├── withProvider.js # utility to generate Provider components
     └── withReduxFeatures.js # Redux store HOC
 ```
+
+
+
+
+docker build -t lorgio/mern-front:0.0.1 .
+docker run -d -it -p 80:80/tcp --name mern-front lorgio/mern-front:0.0.1
+
+
+//Push images to google container registry
+docker build -t lorgio/mern-front:0.0.1 .
+docker tag lorgio/mern-front:0.0.1 gcr.io/ml-api-demos-288521/mern-front:0.0.1
+docker push gcr.io/ml-api-demos-288521/mern-front:0.0.1
+
+//Deploy front, deployment and service
+kubectl apply -f k8s/front-deployment.yaml
+kubectl apply -f k8s/front-service.yaml
+
+
+
+
+http://35.226.216.194/

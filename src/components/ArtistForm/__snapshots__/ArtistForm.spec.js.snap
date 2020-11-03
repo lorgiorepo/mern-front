@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components > ArtistForm renders artist form 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      Create Artist
+    </h1>
+    <form>
+      <input
+        placeholder="Enter Artist Name"
+        required=""
+        type="text"
+      />
+      <br />
+      <br />
+      <input
+        placeholder="Enter Artist Lastname"
+        required=""
+        type="text"
+      />
+      <br />
+      <br />
+      <input
+        placeholder="Nationality"
+        required=""
+        type="text"
+      />
+      <br />
+      <br />
+      <textarea
+        cols="28"
+        placeholder="Enter Biography"
+        required=""
+        rows="5"
+      />
+      <br />
+      <br />
+      <button
+        type="button"
+      >
+        Create
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;
